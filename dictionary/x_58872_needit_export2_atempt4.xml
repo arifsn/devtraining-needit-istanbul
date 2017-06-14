@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Export2 Atempt4" max_length="40" name="x_58872_needit_export2_atempt4" type="collection">
+        <element attributes="import_attribute_name=Active,edge_encryption_enabled=true" label="Active" max_length="40" name="u_active" type="string"/>
+        <element attributes="import_attribute_name=Additional comments,edge_encryption_enabled=true" label="Additional comments" max_length="40" name="u_additional_comments" type="string"/>
+        <element attributes="import_attribute_name=Created,edge_encryption_enabled=true" label="Created" max_length="40" name="u_created" type="string"/>
+        <element attributes="import_attribute_name=Created by,edge_encryption_enabled=true" label="Created by" max_length="40" name="u_created_by" type="string"/>
+        <element attributes="import_attribute_name=Description,edge_encryption_enabled=true" label="Description" max_length="41" name="u_description" type="string"/>
+        <element attributes="import_attribute_name=Opened,edge_encryption_enabled=true" label="Opened" max_length="40" name="u_opened" type="string"/>
+        <element attributes="import_attribute_name=Opened by,edge_encryption_enabled=true" label="Opened by" max_length="40" name="u_opened_by" type="string"/>
+        <element attributes="import_attribute_name=Other,edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
+        <element attributes="import_attribute_name=Priority" label="Priority" max_length="40" name="u_priority" type="integer"/>
+        <element attributes="import_attribute_name=Requested for,edge_encryption_enabled=true" label="Requested for" max_length="40" name="u_requested_for" type="string"/>
+        <element attributes="import_attribute_name=Requested for email,edge_encryption_enabled=true" label="Requested for email" max_length="40" name="u_requested_for_email" type="string"/>
+        <element attributes="import_attribute_name=Request type,edge_encryption_enabled=true" label="Request type" max_length="40" name="u_request_type" type="string"/>
+        <element attributes="import_attribute_name=Short description,edge_encryption_enabled=true" label="Short description" max_length="46" name="u_short_description" type="string"/>
+        <element attributes="import_attribute_name=State,edge_encryption_enabled=true" label="State" max_length="40" name="u_state" type="string"/>
+        <element attributes="import_attribute_name=Updated,edge_encryption_enabled=true" label="Updated" max_length="40" name="u_updated" type="string"/>
+        <element attributes="import_attribute_name=Updated by,edge_encryption_enabled=true" label="Updated by" max_length="40" name="u_updated_by" type="string"/>
+        <element attributes="import_attribute_name=What needed,edge_encryption_enabled=true" label="What needed" max_length="40" name="u_what_needed" type="string"/>
+        <element attributes="import_attribute_name=When needed,edge_encryption_enabled=true" label="When needed" max_length="40" name="u_when_needed" type="string"/>
+        <element attributes="import_attribute_name=Work notes,edge_encryption_enabled=true" label="Work notes" max_length="40" name="u_work_notes" type="string"/>
+    </element>
+</database>
