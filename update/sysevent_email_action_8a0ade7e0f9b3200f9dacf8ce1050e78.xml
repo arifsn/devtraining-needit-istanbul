@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition><![CDATA[/*
+var userDetails = new GlideRecord('sys_user');
+userDetails.addQuery('name',current.u_requested_for.getDisplayValue());
+//userDetails.addQuery('name',current.u_requested_for());
+userDetails.query();
+if (userDetails.next()){
+	var getGroupDetail = new GlideRecord('sys_user_group');
+	getGroupDetail.addQuery('user.name',userDetails.name);
+	getGroupDetail.addQuery('group.name','Learn SN Group');
+	getGroupDetail.query();
+	if (getGroupDetail.next()){
+		answer = true;
+	}
+	else{
+		answer=false;
+	}
+		
+}
+*/	
+]]></advanced_condition>
+        <affected_field_on_event/>
+        <collection>x_58872_needit_needit</collection>
+        <condition/>
+        <content_type>text/html</content_type>
+        <description>Send an email when an event of over due task happens.</description>
+        <event_name>x_58872_needit.overdueNeedItTask</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance>high</importance>
+        <include_attachments>true</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>Hello&nbsp;Requested for: <strong><span style="font-size: 10pt; background-color: #808000; color: #ff0000;">${u_requested_for}</span></strong></p>
+<p>This message is for the Needit application ticket number:&nbsp;Number: ${number}</p>
+<p>This ticket was due on&nbsp;Due date: ${due_date}</p>
+<p>Short Description of this ticket is:&nbsp;Short description: <span style="color: #00ffff; background-color: #993300; font-family: 'arial black', 'avant garde'; font-size: 12pt;">${short_description}</span></p>
+<p>Description is: Description: ${description}</p>
+<p>Priority of this is:&nbsp;Priority: ${priority}</p>
+<p>State of this is:&nbsp;State: ${state}</p>
+<p>Click here to view the Needit Record:&nbsp;<strong class="ph b" style="color: #333333; margin: 0px; text-align: left;">${URI_REF}</strong><span style="color: #333333; text-align: left;">.</span></p>
+<p>This <a title="GOOGLE" href="http://google.com">is google</a> link.</p>
+<p>${mail_script:CountOverdueNeeditTaskP3}</p>
+<p>&nbsp;</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Overdue NeedIt Task</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>u_requested_for</recipient_fields>
+        <recipient_groups/>
+        <recipient_users>ahmadarif@gmail.com,c7dcef120fc33200f9dacf8ce1050ecf,a03b4f920f833200f9dacf8ce1050e8b,46826bf03710200044e0bfc8bcbe5d5c,b682abf03710200044e0bfc8bcbe5d0f</recipient_users>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Subject: Regarding Needit incident number Number: ${number}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-06-15 19:43:10</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8a0ade7e0f9b3200f9dacf8ce1050e78</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Overdue NeedIt Task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sysevent_email_action_8a0ade7e0f9b3200f9dacf8ce1050e78</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-06-15 22:40:55</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template/>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

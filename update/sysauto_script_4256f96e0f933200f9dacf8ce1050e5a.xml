@@ -40,7 +40,7 @@
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-06-14 22:44:09</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>4256f96e0f933200f9dacf8ce1050e5a</sys_id>
         <sys_mod_count>48</sys_mod_count>
         <sys_name>Find NeedIt High Priority (1 and 2) Tasks</sys_name>

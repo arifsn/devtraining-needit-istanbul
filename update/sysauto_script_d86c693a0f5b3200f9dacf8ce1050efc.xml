@@ -34,7 +34,7 @@ while(dueSoon.next()){
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-06-15 16:24:12</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>d86c693a0f5b3200f9dacf8ce1050efc</sys_id>
         <sys_mod_count>4</sys_mod_count>
         <sys_name>Find NeedIt Tasks Due Soon</sys_name>
