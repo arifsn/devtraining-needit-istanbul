@@ -4,25 +4,7 @@
         <action_insert>false</action_insert>
         <action_update>false</action_update>
         <active>true</active>
-        <advanced_condition><![CDATA[/*
-var userDetails = new GlideRecord('sys_user');
-userDetails.addQuery('name',current.u_requested_for.getDisplayValue());
-//userDetails.addQuery('name',current.u_requested_for());
-userDetails.query();
-if (userDetails.next()){
-	var getGroupDetail = new GlideRecord('sys_user_group');
-	getGroupDetail.addQuery('user.name',userDetails.name);
-	getGroupDetail.addQuery('group.name','Learn SN Group');
-	getGroupDetail.query();
-	if (getGroupDetail.next()){
-		answer = true;
-	}
-	else{
-		answer=false;
-	}
-		
-}
-*/	
+        <advanced_condition><![CDATA[	
 ]]></advanced_condition>
         <affected_field_on_event/>
         <collection>x_58872_needit_needit</collection>
@@ -75,7 +57,7 @@ if (userDetails.next()){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8a0ade7e0f9b3200f9dacf8ce1050e78</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Overdue NeedIt Task</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -84,7 +66,7 @@ if (userDetails.next()){
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sysevent_email_action_8a0ade7e0f9b3200f9dacf8ce1050e78</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-06-15 22:40:55</sys_updated_on>
+        <sys_updated_on>2017-06-20 16:26:53</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
